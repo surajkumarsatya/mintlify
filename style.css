@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root {
+  --color-background-main: lab(2.42% -0.16 -0.47);
+  --color-background-invert: lab(100% 0 0); 
+  --color-text-main: lab(100% 0 0); 
+  --color-text-invert: lab(2.42% -0.16 -0.47);
+  --color-text-soft: lab(100% 0 0 / 0.7);  
+  --color-text-sub: lab(100% 0 0 / 0.6);  
+  --color-border-sub: lab(100% 0 0 / 0.07);
+  --color-background-soft: lab(100% 0 0 / 0.05);
+  --color-border-surface: lab(100% 0 0 / 0.05);
+  --color-muted: lab(100% 0 0 / 0.5);
+  --color-border-soft: lab(100% 0 0 / 0.15);
+  --color-border-solid: lab(100% 0 0);
+  --color-brand: lab(79.98% -59.62 22.50);
+  --color-brand-light: lab(51.34% -41.56 15.35);
+  --color-muted-invert: lab(2.42% -0.16 -0.47 / 0.5);
+}
+
+:root{
+    --color-background-main: lab(2.42579% -.165291 -.470081);
+    --color-background-invert: lab(100% 0 0);
+    --color-text-main: lab(100% 0 0);
+    --color-text-invert: lab(2.42579% -.165291 -.470081);
+    --color-text-soft: lab(100% 0 0 / .7);
+    --color-text-sub: lab(100% 0 0 / .6);
+    --color-border-sub: lab(100% 0 0 / .07);
+    --color-background-soft: lab(100% 0 0 / .05);
+    --color-border-surface: lab(100% 0 0 / .05);
+    --color-muted: lab(100% 0 0 / .5);
+    --color-border-soft: lab(100% 0 0 / .15);
+    --color-brand: lab(79.9844% -59.6292 22.5096);
+    --color-brand-light: lab(51.3415% -41.5657 15.3527);
+    --color-border-solid: lab(100% 0 0);
+    --color-muted-invert: lab(2.42579% -.165291 -.470081 / .5);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    width: 1056px;
+    margin: 0 auto;
+    top: 30px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items > li{
+    padding: 4px 12px;
+    font-weight: 500;
+    list-style-type: none;
+    color: var(--color-background-invert);
+}
+
+.nav-items > li:hover{
+    background-color: var(--color-background-soft);
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.logo-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   width: 750px; 
+}
+
+.nav-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.btn-transparent{
+    padding: 4.5px 12px;
+    background-color: var(--color-background-soft);
+    border: 1px solid var(--color-background-soft);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 22.5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.btn-white{
+    padding: 4.5px 12px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 550;
+    line-height: 22.5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.hero-image {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.mintlify.com/hero/bg-light.svg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    transform: scale(1.25);
+    z-index: -1;
+}
+
+.new-self{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    margin: auto;
+    background-color: var(--color-border-soft);
+    width: 367px;
+    height: 30px;
+    line-height: 21px;
+    padding: 4px 8px 4px 4px;
+    margin-top: 41px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.new{
+    font-size: 12px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 30px;
+    background-color: var(--color-brand-light);
+    padding: 2px 8px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.self{
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.new-self > svg{
+    width: 16px;
+    height: 16px;
+    color: white;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 51px;
+}
+
+.main-heading{
+    font-size: 51px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.main-para{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.main-email{
+    width: 360px;
+    height: 42px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-border-soft);
+    color: white;
+    border: 1px solid #ffffff1a;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.main-email > input{
+    font-size: 15px;
+    color: var(--color-background-main);
+    padding: 0 12px;
+    background-color: transparent;
+    border: none;
+}
+
+.main-email > input::placeholder{
+    color: var(--color-text-main);
+    font-weight: 500;
+}
+
+.main-email > input:focus{
+    outline: none;
+    color: var(--color-text-main);
+    font-weight: 500;
+}
+
+.main-btn{
+    padding: 4.5px 12px;
+    border: none;
+    background-color: white;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--color-background-main);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
